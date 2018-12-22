@@ -11,7 +11,7 @@
     },
     "autoload":{
         "psr-4": {
-            "": "vendor\\ttsis\\php-classes\\src"
+            "ttsis\\": "vendor\\ttsis\\php-classes\\src"
         }
     }
 }
