@@ -1,0 +1,17 @@
+{
+    "name": "ttales/ttsis",
+    "description": "sistema erp",
+    "type": "project",
+    "license": "gnu",
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer":"5.2.22",
+        "slim/slim":"2.0",
+        "rain/raintpl":"3.0.0"
+    },
+    "autoload":{
+        "psr-4": {
+            "": "vendor\\ttsis\\php-classes\\src"
+        }
+    }
+}
