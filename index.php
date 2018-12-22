@@ -2,17 +2,19 @@
 
     require_once("vendor/autoload.php");
 
-    $app = new \Slim\Slim();
+    use \Slim\Slim;
+    use \ttsis\Page;
+
+    $app = new Slim();
 
     $app->config('debug', true);
 
     $app->get('/', function(){
 
-        $sql = new ttsis\DB\Sql();
+        $page = new Page();
 
-        $results = $sql->select("select * from tb_users");
+        $page->setTpl("index");
 
-        echo json_encode($results);
     });
 
     $app->run();
